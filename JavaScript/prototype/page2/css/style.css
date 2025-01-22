@@ -1,0 +1,221 @@
+.cover {
+	position: absolute;
+	height: 100%;
+	width: 75%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.5);
+	z-index: 1;
+}
+
+#top-bar {
+	position: absolute;
+	height: 7.5%;
+	width: calc(100% - 20px);
+	left: 0;
+	top: 0;
+
+	background: rgb(150, 150, 200);
+	padding-left: 20px;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#top-bar img {
+	height: 100%;
+}
+
+
+#top-bar .text {
+	font-size: 220%;
+	font-weight: 800;
+}
+
+#top-bar .icon {
+	position: absolute;
+	height: 100%;
+	width: 25%;
+	right: 0;
+
+	background: rgba(255, 150, 150, 1);
+
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+#top-bar .icon span {
+	margin-right: 10%;
+	font-size: 250%;
+}
+
+#top-bar .icon span:hover {
+	text-shadow: 0 0 10px white;
+}
+
+#attribute-container {
+	position: absolute;
+	height: 92.5%;
+	width: 25%;
+	right: 0;
+	top: 7.5%;
+
+	background: rgb(250, 200, 200);;
+	z-index: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#attribute-container .attribute {
+	height: 7.5%;
+	width: 75%;
+	background: lightpink;
+	margin: 5%;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 5px;
+
+	font-size: 120%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: height 0.5s;
+}
+
+#attribute-container .attribute:hover {
+	height: 10%;
+	border-color: white;
+	box-shadow: 0 0 5px 2px white;
+}
+
+#picture-container {
+	position: absolute;
+	height: 85%;
+	width: 75%;
+	left: 0;
+	top: 7.5%;
+
+	background: rgb(0, 0, 100);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#picture-container img {
+	width: min(40%, 700px);
+	margin: 1%;
+	border: 3px solid rgb(0, 0, 80);
+	border-radius: 20px;
+	padding: 15px;
+
+	background: rgb(0, 0, 70);
+
+	box-shadow: 0 0 8px 4px rgb(0, 0, 90);
+}
+
+#picture-container .text {
+	width: min(40%, 700px);
+	border: 3px solid rgb(0, 0, 80);
+	border-radius: 10px;
+	padding: 15px;
+
+	font-size: 200%;
+	letter-spacing: 12px;
+	background: rgb(0, 0, 70);
+
+	color: white;
+	box-shadow: 0 0 8px 4px rgb(0, 0, 90);
+}
+
+#item-container {
+	position: absolute;
+	height: 85%;
+	width: 25%;
+	right: 0;
+	top: 7.5%;
+
+	background: rgb(100, 100, 250);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#item-container .item {
+	height: 7.5%;
+	width: 75%;
+	background: lightblue;
+	margin: 5%;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 5px;
+
+	font-size: 120%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#item-container .item:hover {
+	border-color: white;
+	box-shadow: 0 0 5px 2px white;
+	animation: flip 0.25s linear;
+}
+
+footer {
+	position: absolute;
+	height: 7.5%;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+
+	background: rgb(230, 230, 230);
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+footer .text {
+	font-size: 120%;
+	font-weight: 200;
+	margin: 0 10px;
+}
+
+.text {
+	text-align: center;
+
+}
+
+.lxgw-wenkai-tc-regular {
+	font-family: "LXGW WenKai TC", serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.sour-gummy-en {
+	font-family: "Sour Gummy", serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+}
+
+@keyframes flip {
+	0%		{transform: rotateX(0deg);}
+	50%		{transform: rotateX(180deg);}
+	100%	{transform: rotateX(360deg);}
+}
